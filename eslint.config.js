@@ -1,29 +1,31 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import tsParser from '@typescript-eslint/parser';
+import reactPlugin from 'eslint-plugin-react';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
-export default defineConfig([
-  globalIgnores(['dist']),
+export default [
   {
-    files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-    ],
+    files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
     languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+      parser: tsParser,
       parserOptions: {
-        ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
+        ecmaVersion: 2020,
         sourceType: 'module',
+        ecmaFeatures: { jsx: true },
+      },
+      globals: {
+        // Define globals if needed
       },
     },
+    plugins: {
+      react: reactPlugin,
+      '@typescript-eslint': tsPlugin,
+      'react-hooks': reactHooksPlugin,
+    },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Your rules here
+      'react/react-in-jsx-scope': 'off',
+      // etc.
     },
   },
-])
+];
