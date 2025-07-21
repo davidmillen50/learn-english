@@ -40,3 +40,173 @@
 .read-the-docs {
   color: #888;
 }
+
+/* oranges
+#EF9801
+#EB5924
+#E61D2A
+
+red 
+#be1e2d
+
+yellow
+#ffde17
+
+black/:-moz-only-whitespace
+
+blue 
+#21409a */
+
+.bauhaus-art-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 80px);
+  grid-template-columns: 100px;
+  background: white;
+  z-index: 5;
+  border-right: 4px solid black;
+}
+
+/* Example shapes */
+.shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-circle {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 90%;
+}
+
+.orange-circle {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 80%;
+}
+
+.yellow-circle {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background: yellow;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 70%;
+}
+
+.yellow-rect {
+  width: 80px;
+  height: 20px;
+  background: yellow;
+}
+
+.blue-line {
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  width: 80px;
+  height: 30px;
+  background: blue;
+}
+
+.black-line {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 2px;
+  height: 650px;
+  background: black;
+  z-index: 2;
+}
+
+.black-rect {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 10px;
+  height: 400px;
+  background: black;
+  opacity: 90%;
+}
+
+.md-black-square {
+  position: absolute;
+  top: 200px;
+  left: 35px;
+  width: 1px;
+  height: 400px;
+  background: black;
+}
+
+.lower-black-line {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+  width: 1px;
+  height: 200px;
+  background: black;
+}
+
+.horizontal-black-line {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+  width: 50px;
+  height: 10px;
+  background: black;
+}
+
+.red-rect {
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 100px; /* account for sidebar width */
+  right: 0;
+  height: 60px;
+  background: white;
+  border-bottom: 4px solid black;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  z-index: 9; /* lower than sidebar if needed */
+}
+
+.top-navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
