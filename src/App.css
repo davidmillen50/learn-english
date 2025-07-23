@@ -66,9 +66,8 @@ blue
   display: grid;
   grid-template-rows: repeat(auto-fill, 80px);
   grid-template-columns: 100px;
-  background: white;
   z-index: 5;
-  border-right: 4px solid black;
+  border-right: 2px solid black;
 }
 
 /* Example shapes */
@@ -114,48 +113,57 @@ blue
   opacity: 70%;
 }
 
-.yellow-rect {
-  width: 80px;
-  height: 20px;
-  background: yellow;
-}
-
 .blue-line {
   position: absolute;
   top: 500px;
-  left: 0px;
-  width: 80px;
+  left: 2px;
+  width: 28px;
   height: 30px;
   background: blue;
+  box-shadow: rgb(144, 143, 143) 5px 10px 0px;
+  z-index: 3
 }
 
 .black-line {
   position: absolute;
-  top: 20px;
+  top: 5px;
   left: 20px;
-  width: 2px;
-  height: 650px;
+  width: 1px;
+  height: 350px;
+  background: black;
+  z-index: 2;
+}
+
+.long-black-line {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 1px;
+  height: 340px;
   background: black;
   z-index: 2;
 }
 
 .black-rect {
   position: absolute;
-  top: 200px;
-  left: 20px;
+  top: 420px;
+  left: 70px;
   width: 10px;
-  height: 400px;
+  height: 180px;
   background: black;
   opacity: 90%;
+  box-shadow: rgb(144, 143, 143) 5px 5px 0px;
+  z-index: 6;
 }
 
-.md-black-square {
+.md-black-line {
   position: absolute;
   top: 200px;
-  left: 35px;
-  width: 1px;
+  left: 30px;
+  width: 5px;
   height: 400px;
   background: black;
+  z-index: 8;
 }
 
 .lower-black-line {
@@ -165,6 +173,7 @@ blue
   width: 1px;
   height: 200px;
   background: black;
+  z-index: 6;
 }
 
 .horizontal-black-line {
@@ -174,15 +183,17 @@ blue
   width: 50px;
   height: 10px;
   background: black;
+  z-index: 10;
 }
 
 .red-rect {
   position: absolute;
-  top: 350px;
+  top: 380px;
   left: 40px;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   background: red;
+  box-shadow: rgb(144, 143, 143) 4px 4px 0px;
 }
 
 .top-navbar {
@@ -190,9 +201,8 @@ blue
   top: 0;
   left: 100px; /* account for sidebar width */
   right: 0;
-  height: 60px;
-  background: white;
-  border-bottom: 4px solid black;
+  height: 65px;
+  border-bottom: 2px solid black;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -207,6 +217,98 @@ blue
   text-transform: uppercase;
 }
 
-body {
-  background-color: rgb(255, 255, 255);
+.top-black-circle {
+  position: absolute;
+  top: 2px;
+  left: 1040px;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 90%;
+}
+
+.top-orange-circle {
+  position: absolute;
+  top: 2px;
+  left: 1020px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 80%;
+}
+
+.top-yellow-circle {
+  position: absolute;
+  top: 2px;
+  left: 1000px;
+  width: 60px;
+  height: 60px;
+  background: yellow;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 70%;
+}
+
+.horizontal-thin-black-line-one {
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  width: 80px;
+  height: 1px;
+  background: black;
+  z-index: 10;
+}
+
+.horizontal-thin-black-line-two {
+  position: absolute;
+  top: 295px;
+  left: 10px;
+  width: 60px;
+  height: 1px;
+  background: black;
+  z-index: 10;
+}
+
+.horizontal-thin-black-line-three {
+  position: absolute;
+  top: 305px;
+  left: 30px;
+  width: 60px;
+  height: 1px;
+  background: black;
+  z-index: 10;
+}
+
+.top-horizontal-lack-line-one {
+  position: absolute;
+  top: 5px;
+  left: 1000px;
+  width: 1px;
+  height: 50px;
+  background: black;
+  z-index: 2;
+}
+
+.top-horizontal-lack-line-two {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 985px;
+  height: 1px;
+  background: black;
+  z-index: 2;
+}
+
+.top-horizontal-lack-line-three {
+  position: absolute;
+  top: 5px;
+  left: 996px;
+  width: 1px;
+  height: 44px;
+  background: black;
+  z-index: 2;
 }

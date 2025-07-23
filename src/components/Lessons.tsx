@@ -17,17 +17,30 @@ const Lessons: React.FC = () => {
     <div>
     <nav className="top-navbar" />
       <div className="bauhaus-art-sidebar">
-        <div className="shape black-circle"></div>
+        <div className="shape top-black-circle"></div>
+        <div className="shape top-orange-circle"></div>
+        <div className="shape top-yellow-circle"></div>
+
         <div className="shape yellow-rect"></div>
         <div className="shape blue-line"></div>
+        <div className="shape black-circle"></div>
         <div className="shape orange-circle"></div>
         <div className="shape yellow-circle"></div>
         <div className="shape black-line"></div>
+        <div className="shape long-black-line"></div>
         <div className="shape black-rect"></div>
-        <div className="shape md-black-square"></div>
+        <div className="shape md-black-line"></div>
         <div className="shape lower-black-line"></div>
         <div className="shape horizontal-black-line"></div>
         <div className="shape red-rect"></div>
+
+        <div className="shape horizontal-thin-black-line-one"></div>
+        <div className="shape horizontal-thin-black-line-two"></div>
+        <div className="shape horizontal-thin-black-line-three"></div>
+
+        <div className="top-horizontal-lack-line-one"></div>
+        <div className="top-horizontal-lack-line-two"></div>
+        <div className="top-horizontal-lack-line-three"></div>
       </div>
     </div>
   )
